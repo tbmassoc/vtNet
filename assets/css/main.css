@@ -1,0 +1,65 @@
+@import url("/assets/css/theme.css");
+@import url("/vtNet/assets/css/responsive.css");
+
+.vtNetGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  .vtNetVTuber {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    border-radius: 15px;
+    .vtNetVTBG {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      div {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(1.5px);
+        img {
+          width: 125px;
+          max-width: 100%;
+          height: auto;
+          filter: var(--filter-drop-shadow);
+        }
+      }
+    }
+    .vtNetVTtxt {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+  .vtNetVTuber:hover { background-color: var(--background-color-hover); }
+  .vtNetVTuber:active { background-color: var(--background-color-active); }
+}
+
+.firstMaria-png {
+  background-color: var(--background-color);
+  background-image: url("/vtNet/assets/images/firstMaria_2024.png");
+  background-size: 125%;
+  background-position: 10% 5%;
+  background-repeat: no-repeat;
+  width: 375px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border: 8.75px solid teal;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
