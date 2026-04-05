@@ -38,6 +38,16 @@
     </script>
   </head>
   <body onload="init()">
+    <div class="vtPlayer">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/iQGWVGfHb9o?playlist=iQGWVGfHb9o&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
+        title="vtNet Player"
+        frameborder="0"
+        allow="autoplay"
+        loop>
+      </iframe>
+      <button onclick="{ window.open('https://youtu.be/iQGWVGfHb9o'); }">watch the debut+introduction stream</button>
+    </div>
     <div class="laLunaHero" style="padding: 15px; height: 100%; display: flex; justify-content: center; align-items: center; position: -webkit-sticky; position: sticky; top: 0; z-index: -25;">
       <img class="vtNetLogoFull" src="" alt="vtNet, a tbmassoc network 🌙">
     </div>
@@ -59,9 +69,9 @@
           <p>
             with a singular benefactor at the helm of it all, vtNet prides itself as a
             collection without boundaries -- for everyone.
-          </p>
+          <!-- </p>
           <br><br>
-          <button onclick="{ window.open('/press/20260323') }">read the press release</button>
+          <button onclick="{ window.open('/press/20260323') }">read the press release</button> -->
         </div>
         <div style="width: 100%; height: 125px;"></div>
         <div style="text-align: center;">
@@ -179,6 +189,15 @@
             collective ideas together to cater to varying audiences and expand the
             horizons unlike any other.
           </p>
+        </div>
+        <div style="width: 100%; height: 125px;"></div>
+        <div style="text-align: center;">
+          <h1>press releases</h1>
+        </div>
+        <br><br>
+        <div class="pressArticleBtn" onclick="{ window.open('/press/20260323'); }">
+          <h2>vtNet commences Jun 2026</h2>
+          <p style="font-style: italic;">published 23 Mar 2026</p>
         </div>
       </div>
     </div>
