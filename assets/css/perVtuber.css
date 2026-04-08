@@ -48,6 +48,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     div {
       text-align: center;
       filter: var(--filter-drop-shadow);
