@@ -18,6 +18,7 @@ function perVtuberThm(theme) {
               
           document.querySelector(".vTuberHero").style.backgroundImage = `url("/vtNet/assets/images/backgrounds/mahoroba_${theme}.jpg")`;
           document.querySelector(".vTuberHeroLogo").src = `/vtNet/assets/images/logos/sumiyoi_${theme}.png`;
+          document.querySelector(".sumiyoi177013").src = `/vtNet/assets/images/vtuber/sumiyoi/sumiyoi_177013_${theme}.png`;
 
           return;
 
@@ -52,6 +53,7 @@ function perVtuberThm(theme) {
               
           document.querySelector(".vTuberHero").style.backgroundImage = `url("/vtNet/assets/images/backgrounds/mahoroba_${theme}.jpg")`;
           document.querySelector(".vTuberHeroLogo").src = `/vtNet/assets/images/logos/sumiyoi_${theme}.png`;
+          document.querySelector(".sumiyoi177013").src = `/vtNet/assets/images/vtuber/sumiyoi/sumiyoi_177013_${theme}.png`;
 
           return;
 

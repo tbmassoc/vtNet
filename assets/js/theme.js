@@ -29,7 +29,7 @@ function vtNetLogos(thm) {
 
         // requires /vtNet/assets/js/perVtuber.js
         try { perVtuberThm(thm); }
-        catch (error) { console.warn("/vtNet/assets/js/perVtuber.js not found. skipping..");}
+        catch (error) { console.warn("/vtNet/assets/js/perVtuber.js not found. skipping.."); }
 
         return;
 
@@ -63,7 +63,7 @@ function vtNetLogos(thm) {
 
         // requires /vtNet/assets/js/perVtuber.js
         try { perVtuberThm(thm); }
-        catch (error) { console.warn("/vtNet/assets/js/perVtuber.js not found. skipping..");}
+        catch (error) { console.warn("/vtNet/assets/js/perVtuber.js not found. skipping.."); }
 
         return;
 

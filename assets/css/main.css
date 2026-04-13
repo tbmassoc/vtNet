@@ -46,6 +46,20 @@
   }
   .vtNetVTuber:hover { background-color: var(--background-color-hover); }
   .vtNetVTuber:active { background-color: var(--background-color-active); }
+  .vtNetProfile {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      box-shadow: var(--box-shadow);
+    }
+    div {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 .firstMaria-png {
@@ -79,6 +93,7 @@
   button {
     background-color: #3d374c !important;
     color: #dcc6bb !important;
+    width: max-content;
     max-width: 100%;
     cursor: pointer;
     bottom: 15px;
@@ -98,3 +113,8 @@
 }
 .pressArticleBtn:hover { background-color: var(--text-color-hover); }
 .pressArticleBtn:active { background-color: var(--text-color-active); }
+
+span[class^="animeRef"] {
+  cursor: help;
+  text-decoration: underline dotted;
+}
