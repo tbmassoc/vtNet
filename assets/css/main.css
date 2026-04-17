@@ -118,3 +118,13 @@ span[class^="animeRef"] {
   cursor: help;
   text-decoration: underline dotted;
 }
+
+.sumiyoiAndFriendsPNG {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 8;
+  background-image: url("/vtNet/assets/images/vtuber/sumiyoi/sumiyoi_and_friends_head.png");
+  background-size: 115%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
