@@ -31,6 +31,7 @@
     <script src="/assets/js/theme.js" type="text/javascript"></script> <!-- theme -->
     <script src="/vtNet/assets/js/theme.js" type="text/javascript"></script>
     <script src="/vtNet/assets/js/perVtuber.js" type="text/javascript"></script>
+    <script src="/vtNet/assets/js/vtuber/emiishion.js" type="text/javascript"></script>
     <script type="text/javascript">
       function iniziare() {
         // iniziare() args here
@@ -41,6 +42,16 @@
     </script>
   </head>
   <body onload="init()">
+    <div class="leidramStoryViewer" onclick="{ this.style.display = 'none'; }">
+      <div class="leidramStoryTxt" onclick="{ event.stopPropagation(); }">
+        <p class="leidramVolNum" style="font-size: calc(1em * 0.75); font-style: italic;"></p>
+        <h1 class="leidramVolTitle"></h1>
+        <br>
+        <p class="leidramVolDesc"></p>
+        <br>
+        <p style="font-size: calc(1em * 0.75);">click outside the dialog box to dismiss..</p>
+      </div>
+    </div>
     <div class="navBtnOVL">
       <span class="material-symbols-rounded" onclick="{ window.location.replace('/vtNet'); }" title="go back to vtNet">arrow_back_ios_new</span>
     </div>
@@ -54,7 +65,136 @@
     </div></div>
     <div class="subPageContent">
       <div class="subPageInner" style="padding: 125px 15px;">
-        <p>coming soon..</p>
+        <h1>
+          meet the Reincarnated Phoenix Queen and the Cursed Legend -- the Regents of
+          the Round Table.👑🐣
+        </h1>
+        <br><br>
+        <p>
+          their story of longing and collaborative partnership stemmed from their first
+          encounter in the barren plains of Avalon.
+        </p>
+        <br>
+        <p>
+          Emii Shion, the Reincarnated Phoenix Queen -- who suffered a never-ending loop
+          of illness that kept her from pursuing what she loved; and Arthur Regina
+          Leidram, the Cursed Legend -- who betrayed her kingdom to avenge someone she
+          admired the most.
+        </p>
+        <br>
+        <p>
+          their shared weakness may just be the catalyst for their unified strength in
+          times of uncertainty..
+        </p>
+        <br>
+        <button onclick="{ window.open('https://emiishion.vercel.app'); }">learn more</button>
+        <div style="width: 100%; height: 125px;"></div> <!-- separator -->
+        <h1 style="text-align: center;">meet the Regents of the Round Table</h1>
+        <br><br>
+        <div class="vtNetGrid">
+          <div class="vtNetProfile">
+            <img style="background-color: #fed962;" src="/vtNet/assets/images/vtuber/emiishion/EmiiPNG.png" alt="Emii Shion, the First Regina">
+            <div style="width: 100%; height: calc(15px / 2);"></div>
+            <div>
+              <h2>Emii Shion</h2>
+              <p>the First Regina</p>
+              <div style="width: 100%; height: calc(15px / 2);"></div>
+              <p style="font-size: calc(1em / 1.25);">CV: Aga-chuu / 阿賀忠</p>
+            </div>
+          </div>
+          <div class="vtNetProfile">
+            <img style="background-color: #d6d8e5;" src="/vtNet/assets/images/vtuber/emiishion/LeidramPNG.png" alt="Arthur Regina Leidram, the Second Regina">
+            <div style="width: 100%; height: calc(15px / 2);"></div>
+            <div>
+              <h2>Arthur Regina Leidram</h2>
+              <p>the Second Regina</p>
+              <div style="width: 100%; height: calc(15px / 2);"></div>
+              <p style="font-size: calc(1em / 1.25);">CV: Nashimoto Hiori / 梨本ひおり</p>
+            </div>
+          </div>
+        </div>
+        <div style="width: 100%; height: 125px;"></div> <!-- separator -->
+        <div style="text-align: center;">
+          <h1>an ode to AURORA <i class="bi bi-music-note"></i></h1>
+          <br><br>
+          <p>
+            Emii was originally a part of AURORA's freshest lineup of prospective talents,
+            before she was formally handed over to independence due to unforeseen reasons.
+          </p>
+          <br>
+          <p>
+            and during her initial tenure, she was being taken care of by a familiar face
+            of the vtubing industry at the time: the Third Maria🌸 -- Hina Oujo; where she
+            was initially named "Suzu".
+          </p>
+          <br>
+          <p>
+            however; 18 days after her formal debut, circumstances came that had forced
+            her to prematurely retire from AURORA -- with her presence in the shadows,
+            unable to be seen; until the formal handover through mutual connections to
+            Aga, the First Maria🍃.
+          </p>
+          <br>
+          <p>
+            bearing the Benefactor of the First Regina -- Aga is then tasked to keep
+            Emii's past legacy alive as she pushes forward for its new legacy ahead.
+          </p>
+          <br><br>
+          <p style="font-size: calc(1em * 0.75) !important">
+            "AURORA" is a modified name for AuroraLiveVR, where Emii was initially
+            affiliated with.
+          </p>
+        </div>
+        <div style="width: 100%; height: 125px;"></div> <!-- separator -->
+        <div style="text-align: center;">
+          <h1>explore the Second Regina's past</h1>
+          <p>click on each tile below to see their story overview</p>
+        </div>
+        <br><br>
+        <div class="leidramStory" onclick="{ leidramStory(1); }" title="Where Fates Converge">
+          <img src="https://pbs.twimg.com/media/FjWr_eBagAEUzvj?format=jpg&name=large" alt="Where Fates Converge">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <br>
+        <div class="leidramStory" onclick="{ leidramStory(2); }" title="King Arthur, the Cursed Legend">
+          <img src="https://pbs.twimg.com/media/F3s_Rv1a8AA9yjN?format=png&name=large" alt="King Arthur, the Cursed Legend">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <br>
+        <div class="leidramStory" onclick="{ leidramStory(3); }" title="Exiles of the Round Table">
+          <img src="https://pbs.twimg.com/media/GKPBjXPbMAA_1Xl?format=jpg&name=large" alt="Exiles of the Round Table">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <br>
+        <div class="leidramStory" onclick="{ leidramStory(4); }" title="King Arthur's Respite">
+          <img src="https://pbs.twimg.com/media/GRYkkVZaYAABoeb?format=jpg&name=large" alt="King Arthur's Respite">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <br>
+        <div class="leidramStory" onclick="{ leidramStory(5); }" title="Tristan and the Sealed Sword">
+          <img src="https://pbs.twimg.com/media/Gbs1VJHbYAAocVS?format=jpg&name=large" alt="Tristan and the Sealed Sword">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <br>
+        <div class="leidramStory" onclick="{ leidramStory(6); }" title="Camelot, the Cursed Kingdom">
+          <img src="https://pbs.twimg.com/media/GeHp1UQakAEtLrQ?format=jpg&name=large" alt="Camelot, the Cursed Kingdom">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <br>
+        <div class="leidramStory" onclick="{ leidramStory(7); }" title="Shackled Dawn">
+          <img src="https://pbs.twimg.com/media/G32iJ91W4AASgpz?format=jpg&name=large" alt="Shackled Dawn">
+          <div class="leidramStoryOVL"></div>
+        </div>
+        <div style="width: 100%; height: 125px;"></div> <!-- separator -->
+        <h2>disclaimer</h2>
+        <br>
+        <p>
+          most content from Evertale. ©2019-2026 ZigZaGame, Inc.
+        </p>
+        <div style="width: 100%; height: 125px;"></div> <!-- separator -->
+        <img src="https://emiishion.vercel.app/images/promo_EmiiLeidram.png" alt="絵美紫苑とアーサー王👑🐣 (Emii Shion and Arthur Regina Leidram)">
+        <div style="width: 100%; height: calc(15px / 2);"></div>
+        <p style="text-align: center; font-style: italic;">est. 2022</p>
       </div>
     </div>
     <footer>
