@@ -1,6 +1,31 @@
 @import url("/assets/css/theme.css");
 @import url("/vtNet/assets/css/responsive.css");
 
+header {
+  width: 100%;
+  height: auto;
+  padding: 7.5px calc(15px * 1.5);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  display: block;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  * {
+    margin: 0;
+    display: block;
+  }
+  p {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  span {
+    * { display: initial; }
+  }
+}
+
 .vtNetGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
