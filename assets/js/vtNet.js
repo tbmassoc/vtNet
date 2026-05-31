@@ -33,6 +33,10 @@ function vtNetTimer() {
     if (distance < 0) {
       clearInterval(x);
       document.querySelector("header > p").innerHTML = "00:00:00:00";
+      setTimeout(() => {
+        document.querySelector("header").remove();
+        document.querySelector(".vtPlayer").style.height = `100%`;
+      }, 0);
     }
   }, 1000);
 }
