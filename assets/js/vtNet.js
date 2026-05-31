@@ -10,7 +10,7 @@ function vtNetTimer() {
   var countDownDate = new Date("June 1, 2026 22:00:00 GMT+08:00").getTime();
 
   // Update the count down every 1 second
-  var x = setInterval(function () {
+  var x = setInterval(() => {
     // Get today's date and time
     var now = new Date().getTime();
 
