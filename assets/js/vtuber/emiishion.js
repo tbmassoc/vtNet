@@ -40,6 +40,11 @@ function leidramStory(vol) {
       document.querySelector(".leidramVolTitle").innerText = "The Grail Beneath the Sands";
       document.querySelector(".leidramVolDesc").innerText = "Galahad, Knight of the Round Table, joins Marie Antoinette in a quest for the legendary Grail beneath the sands—";
       return document.querySelector(".leidramStoryViewer").style.display = "flex";
+    case 9:
+      document.querySelector(".leidramVolNum").innerText = `the Round Table Series, vol.${vol}`;
+      document.querySelector(".leidramVolTitle").innerText = "Arthur Leidram's Secret Mission";
+      document.querySelector(".leidramVolDesc").innerText = "Lancelot has orders to bring down the cold-blooded Arthur Leidram—";
+      return document.querySelector(".leidramStoryViewer").style.display = "flex";
     default: event.stopPropagation();
   }
 }
